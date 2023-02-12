@@ -16,17 +16,17 @@ public class Pizza {
         this.isVeg = isVeg;
         // your code goes here
         if(isVeg){
-            this.price+=300;
-            this.toppings+=70;
+            this.price=300;
+            this.toppings=70;
         }
         else {
-            this.price+=400;
-            this.toppings+=120;
+            this.price=400;
+            this.toppings=120;
         }
-        this.isExtraCheeseAdded=false;
+        /*this.isExtraCheeseAdded=false;
         this.isExtraToppingAdded=false;
         this.isBillCreated=false;
-        this.isTakeAway=false;
+        this.isTakeAway=false;*/
 
         this.bill="Base Price Of The Pizza: "+this.price+"\n";
     }
@@ -71,7 +71,7 @@ public class Pizza {
             if (isTakeAway) {
                 this.bill += "Paperbag Added: 20" + "\n";
             }
-            this.bill += "Total Price: " + this.price;
+            this.bill += "Total Price: " +this.price;
             this.isBillCreated=true;
             return this.bill;
         }
