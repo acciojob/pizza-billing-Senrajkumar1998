@@ -10,61 +10,7 @@ public class Pizza {
     boolean isBillCreated;
     boolean isTakeAway;
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
 
-    public Boolean getVeg() {
-        return isVeg;
-    }
-
-    public void setVeg(Boolean veg) {
-        isVeg = veg;
-    }
-
-    public void setBill(String bill) {
-        this.bill = bill;
-    }
-
-    public int getToppings() {
-        return toppings;
-    }
-
-    public void setToppings(int toppings) {
-        this.toppings = toppings;
-    }
-
-    public boolean isExtraCheeseAdded() {
-        return isExtraCheeseAdded;
-    }
-
-    public void setExtraCheeseAdded(boolean extraCheeseAdded) {
-        isExtraCheeseAdded = extraCheeseAdded;
-    }
-
-    public boolean isExtraToppingAdded() {
-        return isExtraToppingAdded;
-    }
-
-    public void setExtraToppingAdded(boolean extraToppingAdded) {
-        isExtraToppingAdded = extraToppingAdded;
-    }
-
-    public boolean isBillCreated() {
-        return isBillCreated;
-    }
-
-    public void setBillCreated(boolean billCreated) {
-        isBillCreated = billCreated;
-    }
-
-    public boolean isTakeAway() {
-        return isTakeAway;
-    }
-
-    public void setTakeAway(boolean takeAway) {
-        isTakeAway = takeAway;
-    }
 
     public Pizza(Boolean isVeg) {
         this.isVeg = isVeg;
@@ -76,10 +22,10 @@ public class Pizza {
             this.price = 400;
             this.toppings = 120;
         }
-        /*this.isExtraCheeseAdded=false;
+        this.isExtraCheeseAdded=false;
         this.isExtraToppingAdded=false;
         this.isBillCreated=false;
-        this.isTakeAway=false;*/
+        this.isTakeAway=false;
 
         this.bill = "Base Price Of The Pizza: "+this.price+"\n";
     }
